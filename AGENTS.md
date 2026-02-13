@@ -31,6 +31,7 @@
   - Do not claim a second issue until the first is closed or explicitly re-assigned.
 - PR flow is GitHub-based, even when bots run locally on one machine:
   - Push branch, open PR, and merge to `main` via PR only.
+  - Do not merge any PR into `main` without explicit user approval in the current session.
 - Avoid runtime collisions between bots:
   - Use unique values per bot for `PORT`, `NEXT_PUBLIC_APP_URL`, and `DATABASE_URL` in that bot shell.
   - Example: `PORT=3001`, `NEXT_PUBLIC_APP_URL=http://localhost:3001`, DB name `corphish_<bot-name>`.
